@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muyang Li</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 960px;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 4rem;
+            height: 3px;
+            background-color: #4f46e5;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="container bg-white shadow-xl rounded-2xl p-6 md:p-10 lg:p-12 my-8">
+
+        <!-- Header and Photo Placeholder -->
+        <header class="text-center mb-10">
+            <!-- Photo Placeholder -->
+            <div class="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden mx-auto mb-6 shadow-md transition-transform transform hover:scale-105 duration-300">
+                <!-- Replace with your photo link here -->
+                <img src="https://placehold.co/400x400/818CF8/FFFFFF?text=Photo" alt="Personal Photo" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">Muyang Li</h1>
+            <p class="text-lg md:text-xl text-gray-600 mt-2">Ph.D. Student in Computer Science</p>
+            <div class="flex flex-col md:flex-row justify-center items-center mt-4 text-gray-500 space-y-2 md:space-y-0 md:space-x-4 text-sm md:text-base">
+                <a href="mailto:muyang.li@ufl.edu" class="hover:text-indigo-600 transition-colors duration-300">📧 muyang.li@ufl.edu</a>
+            </div>
+        </header>
+
+        <!-- Education Section -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold section-title text-gray-800">Education</h2>
+            <div class="space-y-6">
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-inner transition-transform transform hover:scale-105 duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <h3 class="text-xl font-semibold text-indigo-700">University of Florida, Ph.D.</h3>
+                        <span class="text-gray-500 font-medium mt-1 md:mt-0">Present</span>
+                    </div>
+                    <p class="text-gray-700 mt-2">Major: Computer Science</p>
+                </div>
+                <!-- Past Education -->
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-inner transition-transform transform hover:scale-105 duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <h3 class="text-xl font-semibold text-indigo-700">Vanderbilt University, M.S.</h3>
+                        <span class="text-gray-500 font-medium mt-1 md:mt-0">Aug. 2023 - May. 2025</span>
+                    </div>
+                    <p class="text-gray-700 mt-2">Major: Computer Science</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-inner transition-transform transform hover:scale-105 duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <h3 class="text-xl font-semibold text-indigo-700">Shanghai Jiao Tong University, B.S.</h3>
+                        <span class="text-gray-500 font-medium mt-1 md:mt-0">Sep. 2019 - Aug. 2023</span>
+                    </div>
+                    <p class="text-gray-700 mt-2">Major: Electrical and Computer Engineering</p>
+                    <p class="text-gray-700 mt-2">Minor: Data Science & Computer Science</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold section-title text-gray-800">Publications</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-50 p-4 rounded-xl shadow-inner">
+                    <p class="text-gray-700">Li, Muyang, et al. "Dataset Distillation in Medical Imaging: A Feasibility Study." arXiv preprint arXiv:2407.14429 (2024). (SPIE Medical Imaging 2025 Oral)</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl shadow-inner">
+                    <p class="text-gray-700">Li, Muyang, et al. "Automatic Image Unfolding and Stitching Framework for Esophageal Lining Video Based on Density-Weighted Feature Matching. arXiv preprint arXiv:2410.01148 (2024). (SPIE Medical Imaging 2025)</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl shadow-inner">
+                    <p class="text-gray-700">Xiong, Juming, Li, Muyang, et al, "Enhanced Feature-based Image Stitching for Endoscopic Videos in Pediatric Eosinophilic Esophagitis." (SPIE Medical Imaging 2025)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Research Interests Section -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold section-title text-gray-800">Current Research Interests</h2>
+            <div class="space-y-4">
+                <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                    <li>Video-based Multimodal Large Language Model</li>
+                    <li>Key Frame Selection</li>
+                    <li>Video Understanding</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm mt-10">
+            <p>&copy; 2024 Muyang Li. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
